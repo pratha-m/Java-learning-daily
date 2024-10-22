@@ -1,0 +1,17 @@
+dependency injection
+ioc /- containers
+injection through autowiring - @autowiring
+annotations - / various
+spring architecture
+springboot architecture
+difference b/w spring and springboot
+jpa
+hibernate
+layers / - dao, repository, impl files
+
+
+
+budget planner
+billing systeem
+payroll sytem
+banking sytem
