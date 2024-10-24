@@ -1,0 +1,173 @@
+<style>
+  h1{
+    color: blue;
+  }
+  span{
+    color: red;
+  }
+  table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+
+  <!-- <h2>Expressions</h2>
+  <p>Name : <span>{{name}}</span></p>
+  <p>City : <span>{{city}}</span></p>
+  <p>Zip Code : <span>{{zipCode}}</span></p>
+  <Br/><Br/><Br/>
+  <hr> -->
+  
+  <!-- <h2>Two way data binding,ngModel</h2>
+  <input type="text" [(ngModel)]="studentName"/>
+  <input type="text" [(ngModel)]="studentCity"/>
+  <input type="number" [(ngModel)]="studentZipCode"/>
+  <button (click)="AddStudent()">AddStudent</button>
+  <table>
+    <tr>
+      <td>Student Name</td>
+      <td>Student City</td>
+      <td>Student City Zip Code</td>
+    </tr>
+    <tr *ngFor="let eachStud of students">
+      <td>
+        <span>{{eachStud.studentName}}</span>
+      </td>
+      <td>
+        <span>{{eachStud.studentCity}}</span>
+      </td>
+      <td>
+        <span>{{eachStud.studentZipCode}}</span>
+      </td>
+      <td>
+        <button (click)="deleteStudent(eachStud.studentId)">Delete</button>
+      </td>
+    </tr>
+  </table>
+  <Br/><Br/><Br/>
+  <hr> -->
+
+  <!-- <h2>if and else</h2>
+  <p>
+    @if(isServerRunning){
+      <span>Server is running</span>
+    }
+    @else{
+      <span>Server is not running</span>
+    }
+  </p> 
+  <Br/><Br/><Br/>
+  <hr> -->
+
+  <!-- <h2>for</h2> -->
+  <!-- track=>helps Angular keep track of items in a list
+  based on a unique identifier, minimizing re-renders and enhancing performance. -->
+  <!-- <p>
+    @for(user of users;track user.id){
+      <span>{{user.name}}</span>
+    } -->
+  <!-- </p>  -->
+
+  
+  <!-- <h2>Property Binding in Angular</h2> -->
+  <!-- <div [contentEditable]="isEditable">hello</div> -->
+
+  <!-- <h2>Event Handling</h2>
+  <p (mouseover)="onMouseOver()">mouse Element</p> -->
+
+  <!--  Component Communication with @Input -->
+  <!-- <app-student
+    [studentName]="studentName"
+    [studentCity]="studentCity"
+    [studentZipCode]="studentZipCode"
+  ></app-student> -->
+
+  <!-- @output -->
+  <!-- <app-child
+    (addItemEvent)="addItem($event)"
+  />
+  <p>ALl the way {{items.length}}</p> -->
+
+  <!-- <article>
+    <h1>Why Angular is My Favorite Framework</h1>
+    <p>Angular is my favorite framework, and this is why. Angular has the coolest deferrable view feature that makes defer loading content the easiest and most ergonomic it could possibly be. The Angular community is also filled with amazing contributors and experts that create excellent content. The community is welcoming and friendly, and it really is the best community out there.</p>
+    
+    <p>I can't express enough how much I enjoy working with Angular. It offers the best developer experience I've ever had. I love that the Angular team puts their developers first and takes care to make us very happy. They genuinely want Angular to be the best framework it can be, and they're doing such an amazing job at it, too. This statement comes from my heart and is not at all copied and pasted.</p>
+    
+    <p>Angular is my favorite framework, and this is why. Angular has the coolest deferrable view feature that makes defer loading content the easiest and most ergonomic it could possibly be. The Angular community is also filled with amazing contributors and experts that create excellent content. The community is welcoming and friendly, and it really is the best community out there.</p>
+    
+    <p>I can't express enough how much I enjoy working with Angular. It offers the best developer experience I've ever had. I love that the Angular team puts their developers first and takes care to make us very happy. They genuinely want Angular to be the best framework it can be, and they're doing such an amazing job at it, too. This statement comes from my heart and is not at all copied and pasted.</p>
+    
+    <p>Angular is my favorite framework, and this is why. Angular has the coolest deferrable view feature that makes defer loading content the easiest and most ergonomic it could possibly be. The Angular community is also filled with amazing contributors and experts that create excellent content. The community is welcoming and friendly, and it really is the best community out there.</p>
+    
+    <p>I can't express enough how much I enjoy working with Angular. It offers the best developer experience I've ever had. I love that the Angular team puts their developers first and takes care to make us very happy. They genuinely want Angular to be the best framework it can be, and they're doing such an amazing job at it, too. This statement comes from my heart and is not at all copied and pasted.</p>
+  </article> -->
+  <!-- @defer (on viewport){ -->
+   <!-- In this case, we're using the (on viewport) trigger, meaning the comments will only load when they enter the visible part of the page 
+     <comments/> --> 
+  <!-- }@placeholder{ The "Future comments" placeholder appears immediately when the page is rendere --> 
+    <!-- <p>Future Comments</p>
+  }@loading (minimum 2s){
+    <p>Loading Comments....</p>
+  } -->
+
+  <!-- Optimizing images -->
+    <!-- <p>Preferred Framework:</p>
+    <ul>
+      <li>
+        Static Image:
+        <img ngSrc="/assets/logo.svg" alt="Angular logo" width="32" height="32" />
+      </li>
+      <li>
+        Dynamic Image:
+        <img [ngSrc]="logoUrl" [alt]="logoAlt" width="32" height="32" />
+      </li>
+    </ul> -->
+
+    <!-- Routing  -->
+    <!-- <nav>
+      <a href="/first-component">First Component</a>
+      <Br/>
+      <a href="/second-component">Second Component</a>
+      <router-outlet/>
+    </nav> -->
+
+    <!-- router link  -->
+    <!-- <nav>
+      <a routerLink="/first-component" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a>
+      <Br/>
+      <a routerLink="/second-component" routerLinkActive="active" ariaCurrentWhenActive="page">Second Component</a>
+      <router-outlet/>
+    </nav> -->
+
+    <!-- FORMS -->
+    <!-- <app-form/> -->
+
+
+    <!-- Reactive Forms -->
+     <!-- <reactive-form/> -->
+
+
+    <!-- Validating form  -->
+    <!-- <validator-form/> -->
+
+    <!-- injectable service creation and Inject based dependency injection   -->
+    <!-- <car-component/> -->
+
+    <!-- constructor based dependency injection   -->
+    <!-- <car-component-constructor-based/> -->
+
+    <!-- All About Pipe component -->
+    <pipe-component/>
+
+    
+
+
+
+
+
+
+
+
+
+  

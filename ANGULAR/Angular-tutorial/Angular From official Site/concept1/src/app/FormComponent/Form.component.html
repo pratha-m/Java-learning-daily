@@ -1,0 +1,6 @@
+<p>Username: {{ username }}</p>
+<p>{{ username }}'s favorite framework: {{ favoriteFramework }}</p>
+<label for="framework">
+    Favourite Framework: <input type="text" [(ngModel)]="favoriteFramework"/> 
+</label>
+<button (click)="showAlert()">Show Number</button>
