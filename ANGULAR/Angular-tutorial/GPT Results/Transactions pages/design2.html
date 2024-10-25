@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Financial Dashboard</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            border: 1px solid #ffffff;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        .box {
+            border: 1px solid #ffffff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1;
+        }
+        .box:last-child {
+            margin-bottom: 0;
+        }
+        .label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .value {
+            font-size: 1.2em;
+        }
+        .line {
+            border-bottom: 1px solid #ffffff;
+            margin: 10px 0;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .row:last-child {
+            margin-bottom: 0;
+        }
+        .transaction-list {
+            margin: 20px 0;
+        }
+        .transaction {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .transaction:last-child {
+            margin-bottom: 0;
+        }
+        .transaction-type {
+            font-weight: bold;
+        }
+        .transaction-amount {
+            color: #ff0000; /* Red for expenses */
+        }
+        .transaction-amount.income {
+            color: #00ff00; /* Green for income */
+        }
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="label">Expenses</div>
+                <div class="value">200Rs</div>
+            </div>
+            <div class="box">
+                <div class="label">Income</div>
+                <div class="value">700Rs</div>
+            </div>
+            <div class="box">
+                <div class="label">Balance</div>
+                <div class="value">500Rs</div>
+            </div>
+        </div>
+        <div class="transaction-list">
+            <div class="transaction">
+                <div class="transaction-type">Shopping</div>
+                <div class="transaction-amount">-852</div>
+            </div>
+            <div class="transaction">
+                <div class="transaction-type">Entertainment</div>
+                <div class="transaction-amount">-400</div>
+            </div>
+            <div class="transaction">
+                <div class="transaction-type">Entertainment</div>
+                <div class="transaction-amount">-1,400</div>
+            </div>
+            <div class="transaction">
+                <div class="transaction-type">Phone</div>
+                <div class="transaction-amount">-5,000</div>
+            </div>
+            <div class="transaction">
+                <div class="transaction-type">Shopping</div>
+                <div class="transaction-amount">-500</div>
+            </div>
+            <div class="transaction">
+                <div class="transaction-type">Salary</div>
+                <div class="transaction-amount income">7,000</div>
+            </div>
+            <div class="transaction">
+                <div class="transaction-type">Food</div>
+                <div class="transaction-amount">-100</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

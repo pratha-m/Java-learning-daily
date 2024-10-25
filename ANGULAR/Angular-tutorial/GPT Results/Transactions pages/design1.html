@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction List</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Main Container */
+        .transaction-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header for the date, expenses, and income */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        /* Date styling */
+        .date {
+            font-size: 16px;
+            color: #888;
+        }
+
+        /* Transaction List Item */
+        .transaction {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Icon, description, and value sections */
+        .transaction .icon-description {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Transaction Icon */
+        .transaction img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        /* Transaction description */
+        .transaction .description {
+            font-size: 16px;
+        }
+
+        /* Value (expense or income) */
+        .transaction .value {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Income positive green color */
+        .income {
+            color: #4CAF50;
+        }
+
+        /* Expense negative red color */
+        .expense {
+            color: #F44336;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="transaction-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="date">21 Oct  Monday</div>
+            <div>Expenses: 8,252   Income: 7,000</div>
+        </div>
+
+        <!-- Transaction List -->
+        <div class="transaction">
+            <div class="icon-description">
+                <img src="https://img.icons8.com/color/48/000000/shopping-cart.png" alt="Shopping">
+                <div class="description">Shopping</div>
+            </div>
+            <div class="value expense">-852</div>
+        </div>
+
+        <div class="transaction">
+            <div class="icon-description">
+                <img src="https://img.icons8.com/color/48/000000/movie.png" alt="Entertainment">
+                <div class="description">Entertainment</div>
+            </div>
+            <div class="value expense">-400</div>
+        </div>
+
+        <div class="transaction">
+            <div class="icon-description">
+                <img src="https://img.icons8.com/color/48/000000/movie.png" alt="Entertainment">
+                <div class="description">Entertainment</div>
+            </div>
+            <div class="value expense">-1,400</div>
+        </div>
+
+        <div class="transaction">
+            <div class="icon-description">
+                <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Phone">
+                <div class="description">Phone</div>
+            </div>
+            <div class="value expense">-5,000</div>
+        </div>
+
+        <div class="transaction">
+            <div class="icon-description">
+                <img src="https://img.icons8.com/color/48/000000/shopping-cart.png" alt="Shopping">
+                <div class="description">Shopping</div>
+            </div>
+            <div class="value expense">-500</div>
+        </div>
+
+        <div class="transaction">
+            <div class="icon-description">
+                <img src="https://img.icons8.com/color/48/000000/money.png" alt="Salary">
+                <div class="description">Salary</div>
+            </div>
+            <div class="value income">7,000</div>
+        </div>
+
+        <div class="transaction">
+            <div class="icon-description">
+                <img src="https://img.icons8.com/color/48/000000/food.png" alt="Food">
+                <div class="description">Food</div>
+            </div>
+            <div class="value expense">-100</div>
+        </div>
+    </div>
+
+</body>
+</html>
