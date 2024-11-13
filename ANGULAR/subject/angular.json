@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "HospitalManagmentSystem": {
+    "subject": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/hospital-managment-system",
+            "outputPath": "dist/subject",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "HospitalManagmentSystem:build:production"
+              "buildTarget": "subject:build:production"
             },
             "development": {
-              "buildTarget": "HospitalManagmentSystem:build:development"
+              "buildTarget": "subject:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,8 +92,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "8c5087bb-a208-42f1-8e3e-db649f9b0619"
   }
 }
