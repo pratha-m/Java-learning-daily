@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "WildcardGenerics.test",
+            "projectName": "JavaGenerics_538e41f6"
+        },
+        {
+            "type": "java",
+            "name": "UsingEnums",
+            "request": "launch",
+            "mainClass": "GnericMethods.UsingEnums",
+            "projectName": "JavaGenerics_538e41f6"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "GnericMethods.Test",
+            "projectName": "JavaGenerics_538e41f6"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "GenericConstructor.Test",
+            "projectName": "JavaGenerics_538e41f6"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "EnumGenerics.Test",
+            "projectName": "JavaGenerics_538e41f6"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Demo",
+            "request": "launch",
+            "mainClass": "BoundedParamerters.Demo",
+            "projectName": "JavaGenerics_538e41f6"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "BoundedParamerters.Test",
+            "projectName": "JavaGenerics_538e41f6"
+        },
+        {
+            "type": "java",
+            "name": "GenericContainer",
+            "request": "launch",
+            "mainClass": "InterfaceGenerics.GenericContainer",
+            "projectName": "JavaGenerics_538e41f6"
+        }
+    ]
+}
